@@ -28,4 +28,4 @@ cd setuptools-1.4.2
 python2.7 setup.py install
 
 # 安装pip
-curl https://raw.githubusercontent.com/pypa/pip/master/contrib/get-pip.py | python2.7 -
+curl https://bootstrap.pypa.io/get-pip.py | python2.7 -
