@@ -1,9 +1,9 @@
 #!/bin/bash
 python2.7 -V
 # pkg depend
-yum install -y zlib-devel bzip2-devel openssl-devel xz-libs wget
+yum install -y gcc zlib-devel bzip2-devel openssl-devel xz-libs wget
 # download python
-wget http://www.python.org/ftp/python/2.7.8/Python-2.7.8.tar.xz
+wget --no-check-certificate http://www.python.org/ftp/python/2.7.8/Python-2.7.8.tar.xz 
 xz -d Python-2.7.8.tar.xz
 tar -xvf Python-2.7.8.tar
 
@@ -12,7 +12,8 @@ cd Python-2.7.8
 # 运行配置 configure:
 ./configure --prefix=/usr/local
 # 编译安装:
-make && make install
+make
+sudo make install
 # 修改链接
 ln -s /usr/local/bin/python2.7  /usr/bin/python
 # 查看新版本
