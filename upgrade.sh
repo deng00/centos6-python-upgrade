@@ -15,7 +15,7 @@ cd Python-2.7.12
 make
 sudo make install
 # 修改链接
-ln -s /usr/local/bin/python2.7  /usr/bin/python
+ln -sf /usr/local/bin/python2.7  /usr/bin/python
 # 查看新版本
 python -V
 which python
