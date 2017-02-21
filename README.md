@@ -1,1 +1,2 @@
-#升级linux自带的python版本
+升级CentOS自带的python版本
+test on CentOS6
