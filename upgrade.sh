@@ -3,12 +3,12 @@ python2.7 -V
 # pkg depend
 yum install -y gcc zlib-devel bzip2-devel openssl-devel xz-libs wget
 # download python
-wget --no-check-certificate http://www.python.org/ftp/python/2.7.8/Python-2.7.8.tar.xz 
-xz -d Python-2.7.8.tar.xz
-tar -xvf Python-2.7.8.tar
+wget --no-check-certificate http://www.python.org/ftp/python/2.7.12/Python-2.7.12.tar.xz 
+xz -d Python-2.7.12.tar.xz
+tar -xvf Python-2.7.12.tar
 
 # 进入目录:
-cd Python-2.7.8
+cd Python-2.7.12
 # 运行配置 configure:
 ./configure --prefix=/usr/local
 # 编译安装:
