@@ -19,14 +19,17 @@ ln -sf /usr/local/bin/python2.7  /usr/bin/python
 # 查看新版本
 python -V
 which python
-
+cd ../
 # 获取setuptools软件包
 wget --no-check-certificate https://pypi.python.org/packages/source/s/setuptools/setuptools-1.4.2.tar.gz
 # 解压:
 tar -xvf setuptools-1.4.2.tar.gz
 cd setuptools-1.4.2
-# 使用 Python 2.7.8 安装 setuptools
+# 使用 Python 2.7 安装 setuptools
 python2.7 setup.py install
 
 # 安装pip
 curl https://bootstrap.pypa.io/get-pip.py | python2.7 -
+
+#修改yum
+sed -i "s/\/usr\/bin\/python/\/usr\/bin\/python2.6/" /usr/bin/yum
